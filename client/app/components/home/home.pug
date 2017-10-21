@@ -1,2 +1,13 @@
 div(ui-view)
-  | {{ $ctrl.text }}
+  .home-wrapper
+    .title
+      | Wikipedia Viewer
+    .search-bar
+      md-input-container.md-block
+        input(ng-model="$ctrl.query" aria-label="query")
+    .action
+      md-button.md-raised(ng-click="$ctrl.onSearch()") Wiki Search
+
+    ul
+      li(ng-repeat="(key, value) in $ctrl.results")
+        a(ng-href="{{ $ctrl.getWikiUrl(key) }}" target="_blank") {{ value.title }}
