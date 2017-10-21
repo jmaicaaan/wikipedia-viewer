@@ -1,0 +1,47 @@
+.home-wrapper
+  padding: 1em 30px
+  .header-section
+    display: grid 
+    grid-template-columns: 5fr 1fr
+    .right-row
+      display: grid
+      grid-template-columns: repeat(4, 1fr)
+      .notification-menu
+        justify-self: right
+      .account-menu
+        justify-self: center
+  .body-section
+    display: grid 
+    grid-template-columns: 1fr
+    margin-top: 10em
+    justify-items: center
+    .search-row
+      display: grid
+      grid-template-columns: 0.5fr 1fr
+      .logo
+        align-self: center
+        img 
+          width: 44px
+          height: 44px
+          content: url('../../assets/google.png')
+      .search-container
+        margin-top: 20px
+        width: 450px
+    .action-row
+      display: grid 
+      grid-template-columns: repeat(2, 1fr)
+      button.md-button
+        text-transform: none
+        padding: 0 16px
+        background-color: rgb(28, 114, 255)
+        color: white
+        border-radius: 5px
+footer 
+  padding 1em 30px
+  display: grid !important
+  grid-template-columns: 2fr 1fr
+  position: absolute
+  bottom: 0
+  .left-row, .right-row
+    display: grid 
+    grid-template-columns: repeat(4, 1fr)
