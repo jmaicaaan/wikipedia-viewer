@@ -1,7 +1,7 @@
 {
-  "name": "angular-starter",
+  "name": "wikipedia-viewer",
   "version": "0.0.0",
-  "description": "Angular Starter Pack",
+  "description": "In completion of FreeCodeCamp front end certificate - A wikipedia viewer written in javascript",
   "main": "index.js",
   "private": true,
   "scripts": {
@@ -30,8 +30,8 @@
   "engines": {
     "node": "7.x"
   },
-  "homepage": "",
-  "basePath": "",
+  "homepage": "https://jmaicaaan.github.io/wikipedia-viewer",
+  "basePath": "/wikipedia-viewer/",
   "devDependencies": {
     "@types/jquery": "^3.2.4",
     "@types/tether": "^1.4.2",

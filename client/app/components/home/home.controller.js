@@ -7,6 +7,9 @@ class HomeController {
   };
 
   onSearch = () => {
+    if (!this.query) {
+      return;
+    }
     this._$state.go('search', { q: this.query });
   };
 

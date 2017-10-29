@@ -15,7 +15,6 @@ class SearchController {
     if (this.query) {
       this._wikiService.searchWiki(this.query)
       .then((results) => {
-        console.log('results', results);
         this.results = results;
       });
     }

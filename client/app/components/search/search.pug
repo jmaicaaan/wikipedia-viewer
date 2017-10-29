@@ -2,7 +2,7 @@ div
   .search-wrapper
     .body-section
       form.search-row(ng-keyup="$event.keyCode == 13 && $ctrl.onSearch()")
-        .logo
+        .logo(ui-sref="home")
           img.icon
           span Google
         .search-container
