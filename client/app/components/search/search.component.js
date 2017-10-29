@@ -1,6 +1,6 @@
 import template from './search.pug';
 import controller from './search.controller';
-import './search.scss';
+import './search.styl';
 
 let searchComponent = {
   bindings: {},

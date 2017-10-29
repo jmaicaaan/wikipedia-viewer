@@ -11,11 +11,11 @@ class HomeController {
   init = () => {};
 
   onSearch = () => {
-    this._wikiService.searchWiki(this.query)
-      .then((results) => {
-        this.results = results;
-      });
-    // this._$state.go('search');
+    // this._wikiService.searchWiki(this.query)
+    //   .then((results) => {
+    //     this.results = results;
+    //   });
+    this._$state.go('search', { q: this.query });
   };
 
   getWikiUrl = (wikiId) => {

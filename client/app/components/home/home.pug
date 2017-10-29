@@ -1,32 +1,6 @@
-//- div(ui-view)
-//-   .home-wrapper
-//-     .title
-//-       | Wikipedia Viewer
-//-     .search-bar
-//-       md-input-container.md-block
-//-         input(ng-model="$ctrl.query" aria-label="query")
-//-     .action
-//-       md-button.md-raised(ng-click="$ctrl.onSearch()") Wiki Search
-
-//-     ul
-//-       li(ng-repeat="(key, value) in $ctrl.results")
-//-         a(ng-href="{{ $ctrl.getWikiUrl(key) }}" target="_blank") {{ value.title }}
-
 div(ui-view)
-  .home-wrapper
-    .header-section
-      .left-row
-        .hamburger-menu
-          md-icon(md-font-set="material-icons") menu
-      .right-row
-        .gmail-link
-          | Gmail
-        .images-link
-          | Images
-        .notification-menu
-          md-icon(md-font-set="material-icons") notifications
-        .account-menu
-          md-icon(md-font-set="material-icons") account_circle
+  form.home-wrapper
+    header
     .body-section
       .search-row
         .logo
@@ -38,25 +12,7 @@ div(ui-view)
             md-icon(md-font-set="material-icons") mic
       .action-row
         .search-btn
-          md-button.md-raised Google Search
+          md-button.md-raised(type="submit" ng-click="$ctrl.onSearch()") Google Search
         .lucky-btn
           md-button.md-raised I'm Feeling Lucky
-footer
-  .left-row
-    .advertising
-      h3 Advertising
-    .business
-      h3 Business
-    .about
-      h3 About
-  .right-row
-    .privacy
-      h3 Privacy
-    .terms
-      h3 Terms
-    .settings
-      h3 Settings
-    .link
-      h3 Use Google.com
-      
-    
+wk-footer

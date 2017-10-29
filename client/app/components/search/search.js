@@ -13,7 +13,7 @@ let searchModule = angular.module('search', [
 
   $stateProvider
     .state('search', {
-      url: '/search',
+      url: '/search?q',
       component: 'search'
     });
 })
