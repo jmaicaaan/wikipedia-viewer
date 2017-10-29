@@ -20,6 +20,10 @@ class WikiService {
     return this._$http.jsonp(this.baseURL, { params })
       .then((resp) => resp.data.query.pages);
   };
+
+  wikiRandomSearch = () => {
+    return 'https://en.wikipedia.org/wiki/Special:Random';
+  };
 }
 
 export default WikiService;

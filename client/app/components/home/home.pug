@@ -14,5 +14,5 @@ div(ui-view)
         .search-btn
           md-button.md-raised(type="submit" ng-click="$ctrl.onSearch()") Google Search
         .lucky-btn
-          md-button.md-raised I'm Feeling Lucky
+          md-button.md-raised(ng-href="{{ $ctrl.onRandomSearch() }}" target="_blank") I'm Feeling Lucky
 wk-footer
