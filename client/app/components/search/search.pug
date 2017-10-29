@@ -1,7 +1,7 @@
 div
   .search-wrapper
     .body-section
-      .search-row
+      form.search-row(ng-keyup="$event.keyCode == 13 && $ctrl.onSearch()")
         .logo
           img.icon
           span Google
