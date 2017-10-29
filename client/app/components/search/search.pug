@@ -9,13 +9,12 @@ div
           md-input-container.md-block
             input(ng-model="$ctrl.query" aria-label="query")
             md-icon(md-font-set="material-icons") mic
-      .search-results(ng-if="!results")
+      .search-results(ng-if="$ctrl.results")
         .card-container
           md-list
             md-list-item(ng-repeat="(key, value) in $ctrl.results | limitTo: 10 track by key", 
               ng-href="{{ $ctrl.getWikiUrl(key) }}" target="_blank")
               md-card
                 md-card-content
-                  h2 {{ value.title }}
-                
-    wk-footer
+                  h2 {{ value.title }}            
+    wk-footer(ng-show="$ctrl.results")
