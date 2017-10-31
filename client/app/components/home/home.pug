@@ -1,18 +1,18 @@
 div(ui-view)
-  form.home-wrapper
-    header
-    .body-section
-      .search-row
-        .logo
-          img.icon
-          span Google
-        .search-container
-          md-input-container.md-block
-            input(ng-model="$ctrl.query" aria-label="query")
-            md-icon(md-font-set="material-icons") mic
-      .action-row
-        .search-btn
-          md-button.md-raised(type="submit" ng-click="$ctrl.onSearch()") Google Search
-        .lucky-btn
-          md-button.md-raised(ng-href="{{ $ctrl.onRandomSearch() }}" target="_blank") I'm Feeling Lucky
+header
+form.home-wrapper
+  .body-section
+    .search-row
+      .logo
+        img.icon
+        span Google
+      .search-container
+        md-input-container.md-block
+          input(ng-model="$ctrl.query" aria-label="query")
+          md-icon(md-font-set="material-icons") mic
+    .action-row
+      .search-btn
+        md-button.md-raised(type="submit" ng-click="$ctrl.onSearch()") Google Search
+      .lucky-btn
+        md-button.md-raised(ng-href="{{ $ctrl.onRandomSearch() }}" target="_blank") I'm Feeling Lucky
 wk-footer

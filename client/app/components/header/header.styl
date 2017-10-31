@@ -1,11 +1,15 @@
 .header-section
   display: grid 
   grid-template-columns: 5fr 1fr
+  padding: 1em
   .right-row
     display: grid
     grid-template-columns: repeat(4, 1fr)
     color: rgb(180, 180, 180)
     font-size: small
+    grid-column-gap: 1em
+    .gmail-link, .images-link
+      align-self: center
     .notification-menu
       justify-self: right
     .account-menu
